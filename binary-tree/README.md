@@ -4,7 +4,7 @@ You have to build simple binary-tree (can be in console just node of this tree o
 Core rules:
 - left lower numbers/right higher numbers rule have to work for all "rows"
 - added option/automatic sorting numbers from lowest to highest (sorting by searching through tree, not by other sortings)
-- have to wrok for all integer numbers
+- have to work for all integer numbers
 
 Helpful links:
 

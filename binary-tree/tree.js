@@ -1,23 +1,22 @@
 class Root {
-    constructor() {
-        this.number = null;
+    constructor(val) {
+        this.number = val || null;
         this.left = null;
         this.right = null;
     }
     addValue(val) {
-        console.log(val);
         if(this.number == null) this.number = val;
         if (val < this.number) {
-            this.left = this.addValue(val);
+            this.left = new Root(val);
         } else if (val > this.number) {
-            this.right = this.addValue(val);
+            this.right = new Root(val);
         }
     }
 }
 
 let tree = new Root();
 
-for(let i = 0; i<5; i++){
+for(let i = 0; i<15; i++){
     tree.addValue(Math.floor(Math.random()*101));
 }
 

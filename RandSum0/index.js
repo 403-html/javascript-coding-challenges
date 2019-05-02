@@ -6,12 +6,15 @@ class genSum{
     }
     toss(n){
         for(let i = 0; i < n-1; i++){
-                let num = null;
-                while(this.array.includes(num)|| i == 0){
+                let num = this.pickRandNum({
+                    min: 0,
+                    max: 100,
+                    negative: true});
+                while(this.array.includes(num)) {
                     num = this.pickRandNum({
                         min: 0,
                         max: 100,
-                        negative: true}) // between min/max/max in negatives?
+                        negative: true}) // between min/max/max in negative
                 }
                 this.array.push(num);
         }

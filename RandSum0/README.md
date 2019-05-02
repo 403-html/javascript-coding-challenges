@@ -1,0 +1,2 @@
+Napisaæ funkcje która jako argument dostaje liczbe calkowita N. (1<N<100).
+Ta funkcja ma zwrocic tablice ktora zawiera unikatowych N liczb losowych z zakresu od -100 do 100 i oprocz tego suma tych liczb zawsze musi wyjsc 0. Np. dla N=4 tablica [-1,-2,0,3]

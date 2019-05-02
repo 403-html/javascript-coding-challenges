@@ -7,7 +7,7 @@ class genSum{
     toss(n){
         for(let i = 0; i < n-1; i++){
                 let num = null;
-                while(this.array.includes(num)|| num === null){
+                while(this.array.includes(num)|| i == 0){
                     num = this.pickRandNum({
                         min: 0,
                         max: 100,

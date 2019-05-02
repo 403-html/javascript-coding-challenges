@@ -1,39 +1,47 @@
-function genSum(n){
-    let randArray = [];
-    
-    for (let index = 0; index < n; index++) {
+class genSum{
+    constructor(n){
+        this.array = [];
         
-        if(index != n-2){
-            //trzeba dodac "uniq"
-            let num = Math.floor(Math.random()* 100) + 0;
-            num *= Math.floor(Math.random()*2) == 1 ? 1 : -1;
-            randArray.push(num);
+        this.toss(n);
+    }
+    toss(n){
+        for(let i = 0; i < n-1; i++){
+                let num = null;
+                while(this.array.includes(num)|| num === null){
+                    num = this.pickRandNum({
+                        min: 0,
+                        max: 100,
+                        negative: true}) // between min/max/max in negatives?
+                }
+                this.array.push(num);
+        }
+        let lastNum = this.sumArray();
+        
+        if (lastNum == 0) {
+            this.array.push(0)
+        }
+        if (lastNum < 0) {
+            this.array.push(Math.abs(lastNum))
+        }
+        if (lastNum > 0) {
+            this.array.push(-lastNum)
         }
     }
-
-    let lastNum = 0;
-    for (let index = 0; index < randArray.length; index++) {
-        lastNum += randArray[index];
+    pickRandNum({min,max,negative = false}){
+        let num = Math.floor(Math.random()* 100) + 0;
+        if(negative) num *= Math.floor(Math.random()*2) == 1 ? 1 : -1;
+        return num;
     }
-
-    if (lastNum == 0) {
-        randArray.push(0)
+    sumArray(){
+        let sum = 0;
+        for(let i = 0; i < this.array.length; i++){
+            sum += this.array[i];
+        }
+        return sum;
     }
-    if (lastNum < 0) {
-        randArray.push(Math.abs(lastNum))
-    }
-    if (lastNum > 0) {
-        randArray.push(-lastNum)
-    }
-
-    return randArray;
 }
 
-let random = genSum(5);
+let random = new genSum(5);
 
-console.log(random);
-
-for (let index = 0, num = 0; index < random.length; index++) {
-    num += random[index];
-    if(index == random.length-1) console.log(num)
-}
+console.log(random.array);
+console.log(random.sumArray());

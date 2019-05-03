@@ -25,7 +25,7 @@ class genSum{
         }
     }
     pickRandNum({min,max,negative = false}){
-        let num = Math.floor(Math.random()* 100) + 0;
+        let num = Math.floor(Math.random()* max) + min;
         if(negative) num *= Math.floor(Math.random()*2) == 1 ? 1 : -1;
         return num;
     }

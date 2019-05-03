@@ -9,16 +9,13 @@ class genSum{
             this.array.length = 0;
 
             for(let i = 0; i < n; i++){
-                let num = this.pickRandNum({
-                    min: 0,
-                    max: 100,
-                    negative: true});
-                while(this.array.includes(num)) {
+                let num;
+                do {
                     num = this.pickRandNum({
                         min: 0,
                         max: 100,
-                        negative: true}) // between min/max/max in negative
-                }
+                        negative: true});
+                }while(this.array.includes(num))
                 this.array.push(num);
             }
             arrSum = this.sumArray();
@@ -26,15 +23,11 @@ class genSum{
     }
     pickRandNum({min,max,negative = false}){
         let num = Math.floor(Math.random()* max) + min;
-        if(negative) num *= Math.floor(Math.random()*2) == 1 ? 1 : -1;
+        if(negative) num *= Math.random() > 0.5 ? 1 : -1;
         return num;
     }
     sumArray(){
-        let sum = 0;
-        for(let i = 0; i < this.array.length; i++){
-            sum += this.array[i];
-        }
-        return sum;
+        return this.array.reduce((a,b)=>a+b);
     }
 }
 

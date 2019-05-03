@@ -1,2 +1,2 @@
-# javascript-coding-challanges
-Here I will put my challanges with how I resolve it. Feel free to fork by yourself.
+# javascript-coding-challenges
+Here I will put my challenges with how I resolve it. Feel free to fork by yourself.

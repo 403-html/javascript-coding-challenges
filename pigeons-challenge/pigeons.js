@@ -1,4 +1,4 @@
-function feeding(totalWheat){
+function feeding(totalWheat = 0){
     let pigeonsTotal = 0;
     let nextPigeonGroup = 1;
     let currWheat = totalWheat;

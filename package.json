@@ -4,7 +4,7 @@
     "description": "My JS challenges with how I resolve them",
     "main": "index.js",
     "scripts": {
-        "test-all": "jest --passWithNoTests",
+        "test-all": "jest --passWithNoTests --json --outputFile=result.json --testLocationInResults",
         "test-customs": "jest --passWithNoTests -o"
     },
     "repository": {

@@ -10,3 +10,7 @@ jobs:
               run: npm install
             - name: Run tests
               run: npm run test-all
+            - uses: tanmen/jest-reporter@v1
+              if: always()
+              with:
+                  github-token: ${{ secrets.GITHUB_TOKEN }}

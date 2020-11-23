@@ -4,7 +4,7 @@
     "description": "My JS challenges with how I resolve them",
     "main": "index.js",
     "scripts": {
-        "test-all": "jest --passWithNoTests",
+        "test-all": "jest --passWithNoTests --json --outputFile=result.json --testLocationInResults",
         "test-customs": "jest --passWithNoTests -o"
     },
     "repository": {
@@ -15,7 +15,7 @@
         "challenges"
     ],
     "author": "Tymoteusz '403-html' Stępień",
-    "license": "UNLICENSED",
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/403-html/javascript-coding-challenges/issues"
     },

@@ -1,6 +1,6 @@
 {
     "name": "javascript-coding-challenges",
-    "version": "1.0.0",
+    "version": "0.1.0",
     "description": "My JS challenges with how I resolve them",
     "main": "index.js",
     "scripts": {

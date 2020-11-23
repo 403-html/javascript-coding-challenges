@@ -1,0 +1,17 @@
+name: Run Jest tests
+on: [push, pull_request]
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Get the repo
+              uses: actions/checkout@v2
+            - name: Install modules
+              run: npm install
+            - name: Run tests
+              run: npm run test-all
+            - name: Post result
+              uses: tanmen/jest-reporter@v1
+              if: always()
+              with:
+                  github-token: ${{ secrets.GITHUB_TOKEN }}

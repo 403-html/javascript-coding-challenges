@@ -2,16 +2,15 @@ const genSum = require('../index')
 
 const sumArrElems = (arr) => arr.reduce((a, b) => a + b)
 
-// Have to be fixed in algorithm
-// test("Should give an array that's empty", () => {
-//     const arrayLength = 0
-//     const randomArray = new genSum(arrayLength).array
+test('Providing "0" as argument should give an array that\'s empty', () => {
+    const arrayLength = 0
+    const randomArray = new genSum(arrayLength).array
 
-//     expect(randomArray.length).toBe(arrayLength)
-//     expect(randomArray).toBe([])
-// })
+    expect(randomArray.length).toBe(arrayLength)
+    expect(randomArray).toBe([])
+})
 
-test('Array should have length 1, and value of that element should be 0', () => {
+test('Providing "1" as argument should give an array that contains "0"', () => {
     const arrayLength = 1
     const randomArray = new genSum(arrayLength).array
 

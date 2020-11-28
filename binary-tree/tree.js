@@ -3,7 +3,7 @@ class Tree {
     addValue(value) {
         if (!this.number) {
             this.number = value
-            this.branchIndex = 0
+            this.nodeIndex = 0
         } else {
             if (this.valueIndex) this.valueIndex += 1
             else this.valueIndex = 1
@@ -24,7 +24,7 @@ class Tree {
 class Branch {
     constructor(value, index) {
         this.number = value
-        this.branchIndex = index
+        this.nodeIndex = index
     }
     addValue(value, index) {
         // right, higher
@@ -39,22 +39,3 @@ class Branch {
         }
     }
 }
-
-/*
- branch (nr, index)
-   -> inaczej
-        -> sprawdź czy pasuje do lewego brancha (mniejszy niż numer)
-            -> nie, to wstaw numerem i indexem
-            -> tak, to wrzuć nowy branch, który stworzy nowy branch
-        -> sprawdź czy pasuje do prawego brancha (wiekszy niż numer)
-            -> nie, to wstaw nowy branch z numerem
-            -> tak, to wrzuć nowy branch, który stworzy nowy branch
-*/
-
-// let tree = new Tree()
-
-// for (let i = 0; i < 15; i++) {
-//     tree.addValue(Math.floor(Math.random() * 101))
-// }
-
-// console.log(JSON.stringify(tree, null, 2))

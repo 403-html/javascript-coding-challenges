@@ -31,7 +31,11 @@ class genSum {
     }
     sumArray() {
         if (this.array.length) {
-            return this.array.reduce((a, b) => a + b)
+            if (this.array.length == 1) {
+                return this.array[0]
+            } else {
+                return this.array.reduce((a, b) => a + b)
+            }
         } else {
             return this.array
         }

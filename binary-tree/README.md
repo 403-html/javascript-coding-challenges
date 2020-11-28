@@ -1,10 +1,14 @@
 # Binary tree
-You have to build simple binary-tree (can be in console just node of this tree or you can output it with graph in HTML/CSS)
+You have to build a simple binary tree (there can only be a node of this tree in the console or you can plot it with HTML/CSS)
 
-Core rules:
-- left lower numbers/right higher numbers rule have to work for all "rows"
-- added option/automatic sorting numbers from lowest to highest (sorting by searching through tree, not by other sortings)
-- have to work for all integer numbers
+Basic principles:
+- left = smaller
+  - for each node
+- right = greater
+  - for each node
+- (optional) adding an option to automatically sort numbers from the lowest to the highest (sorting by searching the tree, not by other sorting)
+- they must work for all integers
+- adding the possibility of adding new values to the tree
 
 Helpful links:
 

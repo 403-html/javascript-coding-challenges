@@ -1,0 +1,116 @@
+{
+    "zero": {
+        "input": [],
+        "output": {}
+    },
+    "one": {
+        "input": [1],
+        "output": { "number": 1, "nodeIndex": 0 }
+    },
+    "one-smaller": {
+        "input": [2, 1],
+        "output": {
+            "number": 2,
+            "nodeIndex": 0,
+            "valueIndex": 1,
+            "left": { "number": 1, "nodeIndex": 1 }
+        }
+    },
+    "one-greater": {
+        "input": [2, 3],
+        "output": {
+            "number": 2,
+            "nodeIndex": 0,
+            "valueIndex": 1,
+            "right": { "number": 3, "nodeIndex": 1 }
+        }
+    },
+    "greater-and-lower": {
+        "input": [2, 3, 1],
+        "output": {
+            "number": 2,
+            "nodeIndex": 0,
+            "valueIndex": 2,
+            "right": { "number": 3, "nodeIndex": 1 },
+            "left": { "number": 1, "nodeIndex": 2 }
+        }
+    },
+    "inherit-lower": {
+        "input": [4, 3, 2],
+        "output": {
+            "number": 4,
+            "nodeIndex": 0,
+            "valueIndex": 2,
+            "left": {
+                "number": 3,
+                "nodeIndex": 1,
+                "left": { "number": 2, "nodeIndex": 2 }
+            }
+        }
+    },
+    "inherit-greater": {
+        "input": [2, 3, 4],
+        "output": {
+            "number": 2,
+            "nodeIndex": 0,
+            "valueIndex": 2,
+            "right": {
+                "number": 3,
+                "nodeIndex": 1,
+                "right": { "number": 4, "nodeIndex": 2 }
+            }
+        }
+    },
+    "many-values": {
+        "input": [18, 5, 26, 13, 7, 30, 36, 11, 2, 40, 15, 4],
+        "output": {
+            "number": 18,
+            "nodeIndex": 0,
+            "valueIndex": 11,
+            "left": {
+                "number": 5,
+                "nodeIndex": 1,
+                "right": {
+                    "number": 13,
+                    "nodeIndex": 3,
+                    "left": {
+                        "number": 7,
+                        "nodeIndex": 4,
+                        "right": {
+                            "number": 11,
+                            "nodeIndex": 7
+                        }
+                    },
+                    "right": {
+                        "number": 15,
+                        "nodeIndex": 10
+                    }
+                },
+                "left": {
+                    "number": 2,
+                    "nodeIndex": 8,
+                    "right": {
+                        "number": 4,
+                        "nodeIndex": 11
+                    }
+                }
+            },
+            "right": {
+                "number": 26,
+                "nodeIndex": 2,
+                "right": {
+                    "number": 30,
+                    "nodeIndex": 5,
+                    "right": {
+                        "number": 36,
+                        "nodeIndex": 6,
+                        "right": {
+                            "number": 40,
+                            "nodeIndex": 9
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -2,9 +2,11 @@ class genSum {
     constructor(n) {
         this.array = []
         if (n > 0) {
-            if (n === 1) this.array.push(0)
-
-            this.toss(n)
+            if (n === 1) {
+                this.array.push(0)
+            } else {
+                this.toss(n)
+            }
         }
     }
     toss(n) {

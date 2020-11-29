@@ -1,10 +1,10 @@
 class Tree {
     constructor() {}
     addValue(value) {
-        if (!this.number) {
+        if (!this.number && value) {
             this.number = value
             this.nodeIndex = 0
-        } else {
+        } else if (this.number && value) {
             if (this.valueIndex) this.valueIndex += 1
             else this.valueIndex = 1
             // right, higher
@@ -39,3 +39,5 @@ class Branch {
         }
     }
 }
+
+module.exports = Tree

@@ -3,8 +3,9 @@ const isDividiedBy = (num, multiplier) => {
         return true
     }
 }
+
 const fizzbuzz = (n) => {
-    return new Array(n).fill('').map((val, index) => {
+    return new Array(n).fill().map((val, index) => {
         if (isDividiedBy(index + 1, 3) && isDividiedBy(index + 1, 5)) {
             return 'FizzBuzz'
         } else if (isDividiedBy(index + 1, 3) || isDividiedBy(index + 1, 5)) {
@@ -15,4 +16,4 @@ const fizzbuzz = (n) => {
     })
 }
 
-console.log(fizzbuzz(15))
+module.exports = fizzbuzz

@@ -7,7 +7,7 @@ test('Providing "0" as argument should give an array that\'s empty', () => {
     const randomArray = new genSum(arrayLength).array
 
     expect(randomArray.length).toBe(arrayLength)
-    expect(randomArray).toBe([])
+    expect(randomArray).toEqual([])
 })
 
 test('Providing "1" as argument should give an array that contains "0"', () => {
@@ -15,7 +15,7 @@ test('Providing "1" as argument should give an array that contains "0"', () => {
     const randomArray = new genSum(arrayLength).array
 
     expect(randomArray.length).toBe(arrayLength)
-    expect(randomArray[0]).toBe(0)
+    expect(randomArray[0]).toEqual(0)
 })
 
 test('Array should have length 4, and values should sum to 0', () => {
@@ -23,7 +23,7 @@ test('Array should have length 4, and values should sum to 0', () => {
     const randomArray = new genSum(arrayLength).array
 
     expect(randomArray.length).toBe(arrayLength)
-    expect(sumArrElems(randomArray)).toBe(0)
+    expect(sumArrElems(randomArray)).toEqual(0)
 })
 
 test('Array should have length 17, and values should sum to 0', () => {
@@ -31,5 +31,5 @@ test('Array should have length 17, and values should sum to 0', () => {
     const randomArray = new genSum(arrayLength).array
 
     expect(randomArray.length).toBe(arrayLength)
-    expect(sumArrElems(randomArray)).toBe(0)
+    expect(sumArrElems(randomArray)).toEqual(0)
 })

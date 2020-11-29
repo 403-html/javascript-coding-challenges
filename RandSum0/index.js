@@ -41,3 +41,5 @@ class genSum {
         }
     }
 }
+
+module.exports = genSum

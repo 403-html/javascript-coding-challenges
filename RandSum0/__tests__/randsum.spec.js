@@ -1,4 +1,4 @@
-const genSum = require('../index')
+const genSum = require('../randsum')
 
 test('Providing "0" as argument should give an array that\'s empty', () => {
     const arrayLength = 0

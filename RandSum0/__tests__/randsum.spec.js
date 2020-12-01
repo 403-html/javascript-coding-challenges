@@ -1,6 +1,6 @@
 const genSum = require('../randsum')
 
-test('Providing "0" as argument should give an array that\'s empty', () => {
+test.skip('Providing "0" as argument should give an array that\'s empty', () => {
     const arrayLength = 0
     const randomArray = new genSum(arrayLength)
 
@@ -8,7 +8,7 @@ test('Providing "0" as argument should give an array that\'s empty', () => {
     expect(randomArray.sumArray()).toEqual([])
 })
 
-test('Providing "1" as argument should give an array that contains "0"', () => {
+test.skip('Providing "1" as argument should give an array that contains "0"', () => {
     const arrayLength = 1
     const randomArray = new genSum(arrayLength)
 
@@ -16,7 +16,7 @@ test('Providing "1" as argument should give an array that contains "0"', () => {
     expect(randomArray.sumArray()).toEqual(0)
 })
 
-test('Array should have length 4, and values should sum to 0', () => {
+test.skip('Array should have length 4, and values should sum to 0', () => {
     const arrayLength = 4
     const randomArray = new genSum(arrayLength)
 
@@ -24,7 +24,7 @@ test('Array should have length 4, and values should sum to 0', () => {
     expect(randomArray.sumArray()).toEqual(0)
 })
 
-test('Array should have length 17, and values should sum to 0', () => {
+test.skip('Array should have length 17, and values should sum to 0', () => {
     const arrayLength = 17
     const randomArray = new genSum(arrayLength)
 

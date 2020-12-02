@@ -2,7 +2,7 @@
 
 ![Version](https://img.shields.io/github/package-json/v/403-html/javascript-coding-challenges)
 ![Last commit](https://img.shields.io/github/last-commit/403-html/javascript-coding-challenges)
-![Jest version](<https://img.shields.io/badge/testing%20library-jest%20(%5E26.6.3)-blue>)
+![Jest version](https://img.shields.io/badge/testing%20library-jest-blue)
 ![Language](https://img.shields.io/github/languages/top/403-html/javascript-coding-challenges)
 
 ## Description

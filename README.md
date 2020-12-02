@@ -7,15 +7,15 @@
 
 ## Description
 
-> Sample coding challanges. You can write and test it right away.
+> Sample coding challenges. You can write and test it right away.
 
-A repository designed to store programming tasks. Due to the added tests, it is possible to control your own capabilities.
+A repository for testing and storing programming tasks. Due to the added tests, it is possible to control your own capabilities.
 
-It's not perfect, so if you see a bug in the solution or within tests, it will be great if you share your thoughts on the subject, e.g. as an issue or creating a PR.
+It's not perfect, so if you see a bug in the solution or within tests, it will be great if you share your thoughts on the subject, for example, as an issue or creating a PR.
 
 ## How to work with it
 
-First, you have to clone project
+First, you have to clone the project
 
 ```
 git clone https://github.com/403-html/javascript-coding-challenges.git
@@ -35,10 +35,10 @@ or yarn
 yarn install
 ```
 
-Then search for intresting challenge, for example `prime-number`.
-Read the `README.md` in that folder. Write you solution in javascript file dedicated to this folder (in our case `isPrime.js`). There is special place dedicated for that.
+Then search for an interesting challenge, for example, `prime-number`.
+Read the `README.md` in that folder. Write your solution in a javascript file dedicated to this folder (in our case, `isPrime.js`). There is a special place dedicated to doing that.
 
-If you're sure it's all good, go to `__tests__` folder and open test file. Remove `.skip` method in tests and save.
+If you're sure it's all good, go to the `__tests__` folder and open the test file. Remove the `.skip` method in tests and save.
 
 Run tests by npm
 
@@ -52,7 +52,7 @@ or if you're using yarn
 yarn run prime-number
 ```
 
-**If you take other task to do just use name of task folder instead of `prime-number`.**
+**If you take another task to do, just use the name of the task folder instead of `prime-number`.**
 
 **Enjoy!**
 

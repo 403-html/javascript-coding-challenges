@@ -21,26 +21,40 @@ First, you have to clone project
 git clone https://github.com/403-html/javascript-coding-challenges.git
 ```
 
+then install all dependencies
+
+for npm
+
+```
+npm install
+```
+
+or yarn
+
+```
+yarn install
+```
+
 Then search for intresting challenge, for example `prime-number`.
-Read the `README.md` in that folder. Write you solution in this folder.
+Read the `README.md` in that folder. Write you solution in javascript file dedicated to this folder (in our case `isPrime.js`). There is special place dedicated for that.
 
-At the end of your file export your function
+If you're sure it's all good, go to `__tests__` folder and open test file. Remove `.skip` method in tests and save.
 
-```
-module.exports = name_of_your_function
-```
-
-Go to folder `__tests__` in that folder, there will be test file (named in our example `isPrime.spec.js`). Change the first line from
+Run tests by npm
 
 ```
-const isPrime = require('../isPrime')
+npm run prime-number
 ```
 
-to
+or if you're using yarn
 
 ```
-const isPrime = require('../name_of_your_file')
+yarn run prime-number
 ```
+
+**If you take other task to do just use name of task folder instead of `prime-number`.**
+
+**Enjoy!**
 
 ## Contributors
 

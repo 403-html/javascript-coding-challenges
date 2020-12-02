@@ -5,7 +5,12 @@
     "main": "index.js",
     "scripts": {
         "test-all": "jest --passWithNoTests --json --outputFile=result.json --testLocationInResults",
-        "test-customs": "jest --passWithNoTests -o"
+        "test-customs": "jest --passWithNoTests -o",
+        "binary-tree": "jest binary-tree/__tests__/binary-tree.spec.js",
+        "fizzbuzz": "jest fizzbuzz/__tests__/fizzbuzz.spec.js",
+        "pigeons": "jest pigeons/__tests__/pigeons.spec.js",
+        "prime-number": "jest prime-number/__tests__/isPrime.spec.js",
+        "randsum": "jest randsum/__tests__/randsum.spec.js"
     },
     "repository": {
         "type": "git",
